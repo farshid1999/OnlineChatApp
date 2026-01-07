@@ -1,0 +1,28 @@
+<div id="chat_messages" hx-swap-oob="beforeend">
+<div class="fade-in-up">
+    <li>
+        <div class="flex justify-end mb-4">
+            <div class="bg-green-200 rounded-l-lg rounded-tr-lg p-4 max-w-[75%]">
+                <span>{{ message.body }}</span>
+            </div>
+            <div class="flex items-end">
+                <svg height="13" width="8">
+                    <path fill="#bbf7d0" d="M6.3,10.4C1.5,8.7,0.9,5.5,0,0.2L0,13l5.2,0C7,13,9.6,11.5,6.3,10.4z"/>
+                </svg>
+            </div>
+        </div>
+    </li>
+</div>
+
+<style>
+    @keyframes fadeInUp {
+        from{opacity: 0; transform: translateX(20px)}
+        to {opacity: 1;transform: translateX(0px)}
+    }
+    .fade-in-up{
+        animation: fadeInUp 0.6s ease;
+    }
+</style>
+
+<script>scrollBottom()</script>
+</div>
